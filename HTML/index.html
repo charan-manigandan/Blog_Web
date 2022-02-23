@@ -61,7 +61,7 @@
               this is a website all about tech new updated weekly
             </span>
           </h1>
-          <button type="button" class="rounded-pill btn-rounded" onclick="myFuntion()">Get in Touch
+          <button type="button" class="rounded-pill btn-rounded" onclick="popupone()">Get in Touch
             <span><i class="fas fa-arrow-right" id="popup">
             </i></span>    
           </button>
@@ -808,6 +808,80 @@
     
     </script>
      <script src="assets/js/bootstrap.bundle.min.js"></script> -->
+    <!-- ///////////////////////////        logesh changes                       //////////////////////////-->
+    
+    <div class="modal fade" id="popup" tabindex="-1" role="dialog" aria-labelledby="mypopupLabel"
+      aria-hidden="true">
+      <div class="popup-dialog popup-notify modal-warning" role="document">
+        <!--Content-->
+        <div class="popup-content">
+          <!--Header-->
+          <div class="popup-header text-center">
+            <h4 class="popup-title white-text w-100 font-weight-bold py-2">Get Notified</h4>
+            <button type="button" class="close" data-dismiss="popup" aria-label="Close">
+              <span aria-hidden="true" class="white-text">&times;</span>
+            </button>
+          </div>
+    
+          <!--Body-->
+          <div class="popup-body">
+            <div class="popup-form popup-5">
+              <i class="fas fa-user prefix grey-text"></i>
+              <input type="text" id="form3" class="form-control validate">
+              <label data-error="wrong" data-success="right" for="form3">Your name</label>
+            </div>
+    
+            <div class="md-form">
+              <i class="fas fa-envelope prefix grey-text"></i>
+              <input type="email" id="form2" class="form-control validate">
+              <label data-error="wrong" data-success="right" for="form2">Your email</label>
+            </div>
+          </div>
+    
+          <!--Footer-->
+          <div class="popup-footer popup-content-center">
+            <a type="button" class="btn btn-outline-warning waves-effect" onclick="popuptwo()">Submit <i class="fas fa-paper-plane-o ml-1"></i></a>
+          </div>
+        </div>
+        <!--/.Content-->
+      </div>
+    </div>
+    
+    <style>
+      #popup-content {
+        border-style: outset;
+        width: 100px;
+        height: 200px;
+        border-color: rgb(255, 0, 230);
+        background-color: white;
+        display: none;
+        position: relative;
+        bottom: 3000px;
+        left: 50%;
+      }
+      .popup-notify .popup-header {
+        border-radius: 3px 3px 0 0;
+      }
+      .popup-notify .popup-content {
+        border-radius: 3px;
+      }
+    </style>
+    <!--div>
+      <div id="popupform">
+        <input type="text" placeholder="enter your name">
+        <input type="text" placeholder="enter your mail id">
+        <button type="submit" onclick="popuptwo()">Submit</button>
+      </div>
+    </div-->
+    <script>
+      function popupone() {
+        document.getElementById("popup").style.display = "block";
+      }
+      function popuptwo() {
+        document.getElementById("popup").style.display = "none";
+      }
+    </script>
+    <!-- ////////////////////////         logesh changes                           ////////////////////////////-->
 </body>
 
 </html>
