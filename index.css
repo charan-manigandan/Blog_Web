@@ -24,7 +24,7 @@ a:hover {
     margin: 0 auto;
     padding: 0;
 }
-
+/* navbar */
 nav {
     position: fixed;
     top: 0;
@@ -71,6 +71,36 @@ nav a {
     }
 }
 
+/* Greetings */
+.greeting span {
+    font-family: "Permanent Marker", cursive;
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+}
+.greeting span.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#typedtext {
+    font-family: "Source Code Pro", monospace;
+    font-size: 30px;
+    display: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+@media (max-width: 768px) {
+    #typedtext {
+        font-size: 20px; 
+    }
+}
+
+/* section */
 .section {
     padding: 80px 0;
     background-color: black;
@@ -95,6 +125,14 @@ nav a {
     color: white;   
 }
 
+.section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    color: white;
+}
+
+/* project list */
 .project-list {
     display: flex;
     flex-wrap: wrap;
@@ -105,7 +143,7 @@ nav a {
 
 .project-item {
     list-style: none;
-    flex: 1 1 calc(33.333% - 2rem); /* 3 cards in a row */
+    flex: 1 1 calc(33.333% - 2rem); 
     box-sizing: border-box;
 }
 
@@ -150,41 +188,6 @@ nav a {
     .project-item {
         flex: 1 1 100%; 
     }
-}
-
-.greeting span {
-    font-family: "Permanent Marker", cursive;
-    display: inline-block;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: all 0.3s ease;
-}
-.greeting span.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-#typedtext {
-    font-family: "Source Code Pro", monospace;
-    font-size: 30px;
-    display: center;
-    text-align: center;
-    color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-@media (max-width: 768px) {
-    #typedtext {
-        font-size: 20px; /* Font size for mobile devices */
-    }
-}
-
-.section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
-    text-align: center;
-    color: white;
 }
 
 .project-list {
@@ -235,8 +238,8 @@ i {
 }
 
 .skills-grid img {
-    width: 60px; /* Fixed width */
-    height: 60px; /* Fixed height */
+    width: 60px; 
+    height: 60px; 
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     transition: transform 0.3s;
@@ -248,7 +251,7 @@ i {
 
 @media (max-width: 768px) {
     .skills-grid img {
-        width: calc(30% - 1rem); /* 3 images in a row on smaller screens */
+        width: calc(30% - 1rem); 
         height: calc(30% - 1rem);
     }
 }
