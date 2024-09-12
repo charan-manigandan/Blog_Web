@@ -251,8 +251,8 @@ i {
 
 @media (max-width: 768px) {
     .skills-grid img {
-        width: calc(30% - 1rem); 
-        height: calc(30% - 1rem);
+        width: calc(20% - 1rem); 
+        height: calc(20% - 1rem);
     }
 }
 
