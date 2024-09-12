@@ -18,6 +18,7 @@
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -27,92 +28,110 @@
             <div id="typedtext"></div>
             <br></br>
         <br>
+    </section>
+    <section id="skills" class="section">
             <div class="skills">
                 <h3>Skills</h3>
-                <img src="./logos/html.png" alt="Your image description" />
-                <img src="./logos/css-3.png" alt="Your image description" />
-                <img src="./logos/js.png" alt="Your image description" />
-                <img src="./logos/python.png" alt="Your image description" />
-                <img src="./logos/django.png" alt="Your image description" />
-                <img src="./logos/aws-cloud.png" alt="Your image description" />
-                <img src="./logos/mysql.png" alt="Your image description" />
-                <img src="./logos/postgre.png" alt="Your image description" />
-                <img src="./logos/linux.png" alt="Your image description" />
-                <img src="./logos/git.png" alt="Your image description" />
-                <img src="./logos/docker.png" alt="Your image description" />
-                <img src="./logos/bash.png" alt="Your image description" />
+                <div class="skills-grid">
+                    <img src="./logos/html.png" alt="HTML">
+                    <img src="./logos/css-3.png" alt="CSS">
+                    <img src="./logos/js.png" alt="JavaScript">
+                    <img src="./logos/python.png" alt="Python">
+                    <img src="./logos/django.png" alt="Django">
+                    <img src="./logos/aws-cloud.png" alt="AWS">
+                    <img src="./logos/mysql.png" alt="MySQL">
+                    <img src="./logos/postgre.png" alt="PostgreSQL">
+                    <img src="./logos/linux.png" alt="Linux">
+                    <img src="./logos/git.png" alt="Git">
+                    <img src="./logos/docker.png" alt="Docker">
+                    <img src="./logos/bash.png" alt="Bash">
+                </div>
 
             </div>
         </div>
-        <div class="skills">Projects</div>
-        <h3>Projects</h3>
-        <ul class="project-list">
-            <li class="project-item">
-                <a href="project1.html">
-                    <img src="./logos/todo.jpg" alt="Project 1">
-                    <h3>ToDo WebApp</h3>
-                    <p>Implementation of ToDo webapp using Django Html Css</p>
-                </a>
-            </li>
-            <li class="project-item">
-                <a href="project2.html">
-                    <img src="./logos/ecommerce.jpg" alt="Project 2">
-                    <h3>Ecommerce Webapp</h3>
-                    <p>A fully functional Ecommerce WebApp built on top of 
-                        Django and Bootstrap leveraging Postgresql, Integrated with Razorpay payment gateway
-                    </p>
-                </a>
-            </li>
-            <li class="project-item">
-                <a href="https://github.com/charan-manigandan/blood_rescue">
-                    <img src="./logos/Designer.jpg" alt="Project 3">
-                    <h3>Project 3</h3>
-                    <p>Description of Project 3</p>
-                </a>
-            </li>
-        </ul>
     </section>
+        <section id="projects" class="section">
+            <div class="skills"></div>
+            <h3>Projects</h3>
+            <ul class="project-list">
+                <li class="project-item">
+                    <a href="https://github.com/charan-manigandan/ToDo" target="_blank">
+                        <div class="card">
+                            <img src="./logos/todo.jpg" alt="ToDo WebApp">
+                            <div class="card-content">
+                                <h3>ToDo WebApp</h3>
+                                <p>An El-Classico ToDo web app built with Django and Bootstrap, leveraging PostgreSQL, showcasing CRUD functionalies performed by Django Rest Framework</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="project-item">
+                    <a href="https://github.com/charan-manigandan/dairy_ecommerce" target="_blank">
+                        <div class="card">
+                            <img src="./logos/ecommerce.jpg" alt="Ecommerce Webapp">
+                            <div class="card-content">
+                                <h3>Ecommerce Webapp</h3>
+                                <p>A fully functional Ecommerce WebApp built on top of Django and Bootstrap leveraging Postgresql, Integrated with Razorpay payment gateway</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="project-item">
+                    <a href="https://github.com/charan-manigandan/blood_rescue" target="_blank">
+                        <div class="card">
+                            <img src="./logos/Designer.jpg" alt="Project 3">
+                            <div class="card-content">
+                                <h3>Blood Rescue</h3>
+                                <p>Blood Rescue helps finding apropriate donors verified with their mobile number and aadhaar number which helps in reducing scams in blood requesting field</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section id="contact" class="section">
+            <div class="end">
+                <h3>For more programming stuffs !</h3>
+                <div class="credentials">
+                    <div class="block">
+                        <a href="https://github.com/charan-manigandan" target="_blank">
+                            <img src="./logos/github.png" alt="GitHub">
+                        </a>
+                    </div>
+                    <div class="block">
+                        <a href="https://leetcode.com/CHARAN_MANIGANDAN" target="_blank">
+                            <img src="./logos/leetcode.png" alt="LeetCode">
+                        </a>
+                    </div>
+                </div>
+            </div>
 
-
-    <section id="projects" class="section">
-        <!-- <h2>Projects</h2>
-        <ul class="project-list">
-            <li class="project-item">
-                <a href="project1.html">
-                    <img src="./logos/todo.jpg" alt="Project 1">
-                    <h3>ToDo WebApp</h3>
-                    <p>Implementation of ToDo webapp using Django Html Css</p>
-                </a>
-            </li>
-            <li class="project-item">
-                <a href="project2.html">
-                    <img src="./logos/ecommerce.jpg" alt="Project 2">
-                    <h3>Ecommerce Webapp</h3>
-                    <p>Dynamic features added FullStack ecommerce website</p>
-                </a>
-            </li>
-            <li class="project-item">
-                <a href="project3.html">
-                    <img src="project3.jpg" alt="Project 3">
-                    <h3>Project 3</h3>
-                    <p>Description of Project 3</p>
-                </a>
-            </li>
-        </ul> -->
-    </section>
-
-    <section id="contact" class="section">
+            <div class="end">
+                <h3>Lets Connect</h3>
+                <div class="credentials">
+                    
+                    <div class="block">
+                        <a href="https://www.linkedin.com/in/charan-manigandan-799b87226" target="_blank">
+                            <img src="./logos/linkedin.png" alt="LinkedIn">
+                        </a>
+                    </div>
+                    
+                    <div class="block">
+                        <a href="mailto:charan.manigandan@gmail.com" target="_blank">
+                            <img src="./logos/gmail.png" alt="Gmail">
+                        </a>
+                    </div>
+                </div>
+            </div>
     </section>
 </body>
 <script>
     // set up text to print, each item in array is new line
     var aText = new Array(
-        "I’m Charan Manigandan, A FullStack Developer with",
-        " a knack for creating efficient and innovative solutions. With a strong foundation in Python, I specialize in ",
-        "developing robust web applications and seamless user experiences.Over the past few years, I’ve honed my skills ",
-        "through various projects, ranging from e-commerce platforms and enterprise solutions."
+        "I’m Charan Manigandan, A FullStack Developer with a knack for creating efficient and innovative solutions. With a strong foundation in Python, I specialize in developing robust web applications and seamless user experiences.Over the past few years, I’ve honed my skills through various projects, ranging from e-commerce platforms and enterprise solutions.",
+        
     );
-    var iSpeed = 1; // time delay of print out
+    var iSpeed = 25; // time delay of print out
     var iIndex = 0; // start printing array at this position
     var iArrLength = aText[0].length; // the length of the text array
     var iScrollAt = 20; // start scrolling up at this many lines
