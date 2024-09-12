@@ -126,19 +126,18 @@
     </section>
 </body>
 <script>
-    // set up text to print, each item in array is new line
     var aText = new Array(
         "I’m Charan Manigandan, A FullStack Developer with a knack for creating efficient and innovative solutions. With a strong foundation in Python, I specialize in developing robust web applications and seamless user experiences.Over the past few years, I’ve honed my skills through various projects, ranging from e-commerce platforms and enterprise solutions.",
         
     );
-    var iSpeed = 25; // time delay of print out
-    var iIndex = 0; // start printing array at this position
-    var iArrLength = aText[0].length; // the length of the text array
-    var iScrollAt = 20; // start scrolling up at this many lines
+    var iSpeed = 25; 
+    var iIndex = 0;
+    var iArrLength = aText[0].length; 
+    var iScrollAt = 20;
     
-    var iTextPos = 0; // initialize text position
-    var sContents = ''; // initialize contents variable
-    var iRow; // initialize current row
+    var iTextPos = 0; 
+    var sContents = ''; 
+    var iRow; 
     
     function typewriter() {
         sContents =  ' ';
@@ -148,7 +147,7 @@
         while ( iRow < iIndex ) {
             sContents += aText[iRow++] + '<br />';
         }
-        destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "|";
+        destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "<span class='blinking-cursor'>|</span>";
         if ( iTextPos++ == iArrLength ) {
             iTextPos = 0;
             iIndex++;
