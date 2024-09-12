@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="portfoliostyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <section id="about" class="section">
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <h1 class="greeting"></h1>
+        <div class="container">
+            <div id="typedtext"></div>
+            <br></br>
+        <br>
+            <div class="skills">
+                <h3>Skills</h3>
+                <img src="./logos/html.png" alt="Your image description" />
+                <img src="./logos/css-3.png" alt="Your image description" />
+                <img src="./logos/js.png" alt="Your image description" />
+                <img src="./logos/python.png" alt="Your image description" />
+                <img src="./logos/django.png" alt="Your image description" />
+                <img src="./logos/aws-cloud.png" alt="Your image description" />
+                <img src="./logos/mysql.png" alt="Your image description" />
+                <img src="./logos/postgre.png" alt="Your image description" />
+                <img src="./logos/linux.png" alt="Your image description" />
+                <img src="./logos/git.png" alt="Your image description" />
+                <img src="./logos/docker.png" alt="Your image description" />
+                <img src="./logos/bash.png" alt="Your image description" />
+
+            </div>
+        </div>
+        <div class="skills">Projects</div>
+        <h3>Projects</h3>
+        <ul class="project-list">
+            <li class="project-item">
+                <a href="project1.html">
+                    <img src="./logos/todo.jpg" alt="Project 1">
+                    <h3>ToDo WebApp</h3>
+                    <p>Implementation of ToDo webapp using Django Html Css</p>
+                </a>
+            </li>
+            <li class="project-item">
+                <a href="project2.html">
+                    <img src="./logos/ecommerce.jpg" alt="Project 2">
+                    <h3>Ecommerce Webapp</h3>
+                    <p>A fully functional Ecommerce WebApp built on top of 
+                        Django and Bootstrap leveraging Postgresql, Integrated with Razorpay payment gateway
+                    </p>
+                </a>
+            </li>
+            <li class="project-item">
+                <a href="https://github.com/charan-manigandan/blood_rescue">
+                    <img src="./logos/Designer.jpg" alt="Project 3">
+                    <h3>Project 3</h3>
+                    <p>Description of Project 3</p>
+                </a>
+            </li>
+        </ul>
+    </section>
+
+
+    <section id="projects" class="section">
+        <!-- <h2>Projects</h2>
+        <ul class="project-list">
+            <li class="project-item">
+                <a href="project1.html">
+                    <img src="./logos/todo.jpg" alt="Project 1">
+                    <h3>ToDo WebApp</h3>
+                    <p>Implementation of ToDo webapp using Django Html Css</p>
+                </a>
+            </li>
+            <li class="project-item">
+                <a href="project2.html">
+                    <img src="./logos/ecommerce.jpg" alt="Project 2">
+                    <h3>Ecommerce Webapp</h3>
+                    <p>Dynamic features added FullStack ecommerce website</p>
+                </a>
+            </li>
+            <li class="project-item">
+                <a href="project3.html">
+                    <img src="project3.jpg" alt="Project 3">
+                    <h3>Project 3</h3>
+                    <p>Description of Project 3</p>
+                </a>
+            </li>
+        </ul> -->
+    </section>
+
+    <section id="contact" class="section">
+    </section>
+</body>
+<script>
+    // set up text to print, each item in array is new line
+    var aText = new Array(
+        "I’m Charan Manigandan, A FullStack Developer with",
+        " a knack for creating efficient and innovative solutions. With a strong foundation in Python, I specialize in ",
+        "developing robust web applications and seamless user experiences.Over the past few years, I’ve honed my skills ",
+        "through various projects, ranging from e-commerce platforms and enterprise solutions."
+    );
+    var iSpeed = 1; // time delay of print out
+    var iIndex = 0; // start printing array at this position
+    var iArrLength = aText[0].length; // the length of the text array
+    var iScrollAt = 20; // start scrolling up at this many lines
+    
+    var iTextPos = 0; // initialize text position
+    var sContents = ''; // initialize contents variable
+    var iRow; // initialize current row
+    
+    function typewriter() {
+        sContents =  ' ';
+        iRow = Math.max(0, iIndex-iScrollAt);
+        var destination = document.getElementById("typedtext");
+        
+        while ( iRow < iIndex ) {
+            sContents += aText[iRow++] + '<br />';
+        }
+        destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "|";
+        if ( iTextPos++ == iArrLength ) {
+            iTextPos = 0;
+            iIndex++;
+            if ( iIndex != aText.length ) {
+                iArrLength = aText[iIndex].length;
+                setTimeout("typewriter()", 500);
+            }
+        } else {
+            setTimeout("typewriter()", iSpeed);
+        }
+    }
+
+    typewriter();
+
+    const greetings = [
+        "Hello",
+        "Hola",
+        "Bonjour",
+        "Ciao",
+        "Konnichiwa",
+        "Namaste",
+        "Guten Tag",
+        "Olá",
+        "Asalaam alaikum",
+        "Здравствуйте"
+    ];
+
+    const greetingElement = document.querySelector('.greeting');
+    let currentIndex = 0;
+
+    function updateGreeting() {
+        const currentGreeting = greetings[currentIndex];
+        greetingElement.innerHTML = '';
+        
+        for (let i = 0; i < currentGreeting.length; i++) {
+            const span = document.createElement('span');
+            span.textContent = currentGreeting[i];
+            greetingElement.appendChild(span);
+
+            setTimeout(() => {
+                span.classList.add('visible');
+            }, 50 * i);
+        }
+
+        setTimeout(() => {
+            for (let i = 0; i < currentGreeting.length; i++) {
+                setTimeout(() => {
+                    greetingElement.children[i].classList.remove('visible');
+                }, 50 * i);
+            }
+        }, 2000);
+
+        currentIndex = (currentIndex + 1) % greetings.length;
+        setTimeout(updateGreeting, 3000);
+    }
+
+    updateGreeting();
+</script>
+</html>

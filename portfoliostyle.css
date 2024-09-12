@@ -1,0 +1,198 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    height:100%;
+    width: 100%;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #009688;
+}
+
+.container {
+    display: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+
+/* @media (min-aspect-ratio: 1/7) and (orientation: landscape),
+       (max-aspect-ratio: 7/1) and (orientation: portrait) {
+    header h1 { 
+        font-size: 3rem; 
+    }
+    header p {  
+        font-size: 1rem;  
+    }
+} */
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(5, 5, 5, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(229, 225, 225, 0.1);
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav li {
+    margin: 0 1rem;
+}
+
+nav a {
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+.section {
+    padding: 80px 0;
+    background-color: black;
+    height:30rem;
+    width:auto;
+
+}
+
+.section h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 2.5rem;
+    text-align: center;
+    color: white;
+}
+
+.section p {
+    font-size: 1.2rem;
+    text-align: center;
+    color: white;   
+}
+
+.greeting span {
+    font-family: "Permanent Marker", cursive;
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+}
+.greeting span.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#typedtext {
+    font-family: "Source Code Pro", monospace;
+    font-size: 30px;
+    display:center;
+    text-align: center;
+    color:white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+
+.section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    color: white
+}
+
+.project-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 -1rem;
+}
+
+.project-item {
+    width: 33.33%;
+    padding: 1rem;
+}
+
+.project-item img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.project-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.project-item p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+i {
+    width: 20px;
+    height:20px;
+    color: white;
+}
+
+.skills img {
+    width: 50px;
+    height: 50px;
+    max-width: 100%;
+    max-height: 100%;
+    padding-right: 36px;
+}
+  
+.skills i {
+    display: center;
+    width:20px;
+    height:20px;
+    color: white;
+}
+
+.material-symbols-outlined {
+    color:white;
+    height:50px;
+    width:50px;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24,
+}
+    
+h3 {
+    font-family: "Source Code Pro", monospace;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 2.5rem;
+    text-align: center;
+    color: white;
+}
+
+.fab.fa-python {
+    font-size: 4rem;
+    color: #3572A5;
+    margin-bottom: 1rem;
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+  }
