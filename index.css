@@ -58,6 +58,19 @@ nav a {
     border-radius: 5px;
 }
 
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+
+    nav a {
+        padding: 0.5rem;
+        width: 100%;
+    }
+}
+
 .section {
     padding: 80px 0;
     background-color: black;
