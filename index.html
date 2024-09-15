@@ -205,5 +205,18 @@
     }
 
     updateGreeting();
+    document.addEventListener('DOMContentLoaded', () => {
+        const container = document.querySelector('section');
+        const particleCount = 100; 
+
+        for (let i = 0; i < particleCount; i++) {
+            const particle = document.createElement('div');
+            particle.classList.add('particle');
+            particle.style.left = `${Math.random() * 100}%`;
+            particle.style.top = `${Math.random() * 100}%`;
+            particle.style.animationDelay = `${Math.random() * 2}s`;
+            container.appendChild(particle);
+        }
+    });
 </script>
 </html>
