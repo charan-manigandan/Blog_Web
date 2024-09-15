@@ -326,3 +326,27 @@ h3 {
     display: none;
 }
 
+.particle {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0;
+    animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+    0% {
+        opacity: 0;
+        transform: translateY(0) scale(1);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(0) scale(1.5);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(0) scale(1);
+    }
+}
