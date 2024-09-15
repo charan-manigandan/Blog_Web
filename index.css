@@ -51,7 +51,7 @@ nav li {
 }
 
 nav a {
-    font-family: "Love Ya Like A Sister", cursive;
+    font-family: "Love Ya Like A Sister";
     font-weight: 400;
     font-style: normal;
     padding: 0.5rem 1rem;
@@ -73,7 +73,7 @@ nav a {
 
 /* Greetings */
 .greeting span {
-    font-family: "Permanent Marker", cursive;
+    font-family: "Permanent Marker";
     display: inline-block;
     opacity: 0;
     transform: translateY(20px);
